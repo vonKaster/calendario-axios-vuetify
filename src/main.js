@@ -7,8 +7,9 @@ import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import VueMeta from 'vue-meta';
 
-Vue.use(VueAxios, axios)
+Vue.use(VueAxios, axios, VueMeta)
 Vue.config.productionTip = false
 
 new Vue({

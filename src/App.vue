@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <navBar></navBar>
     <v-main>
       <v-container>
         <router-view />
@@ -18,14 +19,21 @@
         </v-dialog>
       </v-container>
     </v-main>
+    <Footer></Footer>
   </v-app>
 </template>
 
 <script>
 import { mapState } from 'vuex';
+import navBar from './components/navBar.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: "App",
+  components: {
+        navBar,
+        Footer
+    },
 
   data: () => ({
     //

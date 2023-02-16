@@ -72,7 +72,8 @@ export default {
     }
   },
   created(){
-    this.getDolar(this.fecha)
+    document.title = "Digicard | Calendario";
+    this.getDolar(this.fecha);
   }
 };
 </script>
